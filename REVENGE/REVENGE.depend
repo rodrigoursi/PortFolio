@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1639175052 source:c:\users\mapu\desktop\utn\laboratorio\proyecto\revenge\main.cpp
+	<iostream>
+	<ctime>
+	"fun.h"
+	<string>
+
+1639175060 source:c:\users\mapu\desktop\utn\laboratorio\proyecto\revenge\fun.cpp
+	<iostream>
+	<cstdlib>
+	"fun.h"
+
+1639173804 c:\users\mapu\desktop\utn\laboratorio\proyecto\revenge\fun.h
+
