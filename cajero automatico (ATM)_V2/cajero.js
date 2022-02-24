@@ -59,14 +59,14 @@ function entregarDinero() {             ////////// FUNCION CON EL ALGORITMO DE E
     cash.innerHTML= "EN ESTE MOMENTO NO PODEMOS ENTREGAR ESTA SUMA DE DINERO";
   }
   else{
-    for(var i=0;i<3;i++){
-      if(entregado[i].cantidad>0){
-        saldo.innerHTML="EL SALDO DEL CAJERO ES: $"+sold;
-        cash.innerHTML+=entregado[i].cantidad+" BILLETES DE $ "+entregado[i].valor+"<br/>";
-        cash.appendChild(entregado[i].imagen);
+    for(var entre of entregado){   ////////////////////////////////// ACA REALICE UN FOR ESPECIAL, LA PALABRA "entre" la elegi yo,
+      if(entre.cantidad>0){        ///////////////////////////////// CONTINUO LO DE ARRIBA. "entregado" ES LA ARRAY entregado[i],
+        saldo.innerHTML="EL SALDO DEL CAJERO ES: $"+sold; /////////  EL "entre." HACE REFERENCIA AL VECTOR "entregado[]" OSEA SI
+        cash.innerHTML+=entre.cantidad+" BILLETES DE $ "+entre.valor+"<br/>"; // ES LA SEGUNDA VUELTA DEL FOR EL "entre."
+        cash.appendChild(entre.imagen);  /////////////////////////////////////  SERA EL "entregado [1]"
         cash.innerHTML+="</br>--------------------------"+"<br/>";
-      }
-    }
+      } /////////  EL FOR ESTE Q TIENE "of" EN EL MEDIO RECORRE LA ARRAY COMPLETA ENTONCES SI LA ARRAY ES DE 3 `[3]` ENTONCES EL FOR
+    }  ///////////////////////////////////// VA ARECCORRER 3 VUELTAS.
   }
 }
 
