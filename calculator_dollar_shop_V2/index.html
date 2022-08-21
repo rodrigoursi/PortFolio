@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora dolares a pesos en tiendas online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="divc2 principal" id="div2">
+    <h1>CALCULADORA DE COMPRA DE JUEGOS EN VALOR DOLARES</h1>
+    <img src="carrito.png" width="320" height="165">
+    <ol class="ol">
+      <li class="li1">Elije en que tienda o consola realizaras la compra</li>
+      <li class="li2">Luego ingresa el valor en dolares de la compra que deseas realizar</li>
+    </ol>
+    <div class="p1">
+      <select name="select" id="select">
+        <option value="elije">Elije una opcion</option>
+        <option value="play">PLAYSTATION</option>
+        <option value="xbox">XBOX</option>
+        <option value="goo">GOOGLE STORE</option>
+      </select>
+      <input type="number" name="texto" id="texto">
+      <a href="#resultado"> <input type="button" name="enviar" id="btnp" value="Pulsar"></a>
+    </div>
+    <div class="p2">
+      <strong>EL PRODUCTO TE SALDRA:</strong>
+    </div>
+  </div>
+  <footer>Copyright &copy; 2022 Rodrigo Ursi, todos los derechos reservados.</footer>
+  <script src="dolarApi.js" charset="utf-8"></script>
+  <script src="calcu.js" charset="utf-8"></script>
+</body>
+
+</html>
